@@ -3,6 +3,5 @@ line-bot-sdk
 langchain
 langchain-groq
 langchain-pinecone
-langchain-huggingface
-sentence-transformers
 gunicorn
+google-generativeai
