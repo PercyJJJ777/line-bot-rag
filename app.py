@@ -4,30 +4,56 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 from langchain_groq import ChatGroq
-from langchain_huggingface import HuggingFaceEndpointEmbeddings
 from langchain_pinecone import PineconeVectorStore
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
+import google.generativeai as genai
+from typing import List
 
-# ดึงค่าจากตัวแปร Environment (เราจะไปใส่ค่าเหล่านี้ในเว็บ Cloud ภายหลัง)
+# ดึงค่าจากตัวแปร Environment
 LINE_CHANNEL_ACCESS_TOKEN = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN")
 LINE_CHANNEL_SECRET = os.environ.get("LINE_CHANNEL_SECRET")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
-INDEX_NAME = "sinotech-index"
+# อัปเดตชื่อ Index ให้ตรงกับที่สร้างไว้ใหม่
+INDEX_NAME = "sinotech-gemini"
 
 app = Flask(__name__)
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
+# ตั้งค่า Google Gemini API
+genai.configure(api_key=GEMINI_API_KEY)
+
+# สร้าง Class Embedding แบบกำหนดเองเพื่อให้ใช้ Google SDK ตรงและล็อก 768 มิติได้
+class CustomGeminiEmbeddings:
+    def embed_documents(self, texts: List[str]) -> List[List[float]]:
+        result = genai.embed_content(
+            model="models/gemini-embedding-2",
+            content=texts,
+            task_type="retrieval_document",
+            output_dimensionality=768
+        )
+        return result['embedding']
+        
+    def embed_query(self, text: str) -> List[float]:
+        result = genai.embed_content(
+            model="models/gemini-embedding-2",
+            content=text,
+            task_type="retrieval_query",
+            output_dimensionality=768
+        )
+        return result['embedding']
+
 # เตรียม Embeddings และเชื่อมต่อ Pinecone
-embeddings = HuggingFaceEndpointEmbeddings(model="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+embeddings = CustomGeminiEmbeddings()
 vectorstore = PineconeVectorStore(index_name=INDEX_NAME, embedding=embeddings, pinecone_api_key=PINECONE_API_KEY)
 retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
 
-# เตรียม LLM (Groq)
+# เตรียม LLM (ใช้ Groq เหมือนเดิมเพราะเร็วและฟรี)
 llm = ChatGroq(model_name="openai/gpt-oss-120b", temperature=0, groq_api_key=GROQ_API_KEY)
 
 # กำหนด Prompt
