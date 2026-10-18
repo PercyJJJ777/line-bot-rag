@@ -64,6 +64,7 @@ def handle_message(event):
     try:
         bot_reply = rag_chain.invoke(user_message)
     except Exception as e:
+        print(f"Error details: {e}")
         bot_reply = f"ระบบกำลังปรับปรุง กรุณารอสักครู่ค่ะ"
 
     line_bot_api.reply_message(
