@@ -1,0 +1,11 @@
+{
+  "index_name": "sinotech-gemini-3072",
+  "namespace": "rag-f6b937b52e635197a0a2",
+  "embedding_model": "gemini-embedding-2",
+  "dimension": 3072,
+  "vector_field": "embedding",
+  "document_template": "title: {title} | text: {text}",
+  "query_template": "task: search result | query: {question}",
+  "api": "pinecone-documents",
+  "record_count": 151
+}

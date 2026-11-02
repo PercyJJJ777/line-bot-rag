@@ -1,7 +1,6 @@
-Flask
-line-bot-sdk
-langchain
-langchain-groq
-langchain-pinecone
-gunicorn
-google-generativeai
+Flask>=3.1,<4
+gunicorn>=23,<27
+google-genai==2.12.1
+pinecone==10.2.0
+groq>=0.34,<1
+httpx>=0.28,<1
