@@ -58,7 +58,7 @@ def document_types(question):
     q = question.lower()
     price = any(word in q for word in ("ราคา", "ขายส่ง", "ขายปลีก", "price", "cost", "บาท"))
     compatibility = ('แบต' in q and any(word in q for word in ('ใช้กับ','ใช้ร่วม','รองรับ','ต่อแบต','ใช้แบต'))) or any(word in q for word in ('compatib','เข้ากันได้'))
-    datasheet = any(word in q for word in ("สเปก", "สเปค", "datasheet", "data sheet", "spec", "mppt", "แรงดัน", "กระแส", "ประสิทธิภาพ",'ความจุ','น้ำหนัก','พลังงาน','capacity','weight','energy')) or ('รองรับ' in q and not compatibility)
+    datasheet = any(word in q for word in ("สเปก", "สเปค", "datasheet", "data sheet", "spec", "mppt", "เฟส", "phase", "แรงดัน", "กระแส", "ประสิทธิภาพ",'ความจุ','น้ำหนัก','พลังงาน','capacity','weight','energy')) or ('รองรับ' in q and not compatibility)
     user_manual = any(word in q for word in ("user manual", "คู่มือใช้งาน", "คู่มือการใช้งาน")) or bool(re.search(r"\bum\b", q))
     install = any(word in q for word in ("ติดตั้ง", "installation", "เดินสาย", "ขั้วต่อ"))
     manual = any(word in q for word in ("วิธี", "ตั้งค่า", "คู่มือ", "manual", "error", "alarm", "led", "พารามิเตอร์", "parameter", "troubleshoot", "reset")) or bool(re.search(r'\b[ew]-?\d{1,3}\b',q))

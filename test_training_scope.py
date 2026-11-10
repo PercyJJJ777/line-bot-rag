@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import unittest
 from unittest.mock import Mock
-from rag_core import RagEngine,build_catalog,identify_models
+from rag_core import RagEngine,build_catalog,identify_models,document_types
 
 class TrainingScopeTests(unittest.TestCase):
     def setUp(self):
@@ -57,5 +57,9 @@ class TrainingScopeTests(unittest.TestCase):
         models,unknown=identify_models('ASW10K-LT-G2 Pro กับ ASW9999-S-G9',self.catalog)
         self.assertTrue(unknown)
         self.assertIn('ASW9999-S-G9',models)
+
+    def test_phase_question_uses_datasheet_instead_of_price_category(self):
+        for question in ['ASW10K-LT-G2 Pro เป็นกี่เฟส','ASW10K-LT-G2 Pro how many phases']:
+            self.assertEqual(document_types(question),(['datasheet'],True))
 
 if __name__=='__main__': unittest.main()
