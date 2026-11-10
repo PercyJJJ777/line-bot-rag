@@ -1,0 +1,526 @@
+{
+  "APH5.0-S10": [
+    "APH5.0-S10"
+  ],
+  "APH5.0-S2": [
+    "APH5.0-S2"
+  ],
+  "APH5.0-S3": [
+    "APH5.0-S3"
+  ],
+  "APH5.0-S4": [
+    "APH5.0-S4"
+  ],
+  "APH5.0-S5": [
+    "APH5.0-S5"
+  ],
+  "APH5.0-S6": [
+    "APH5.0-S6"
+  ],
+  "APH5.0-S7": [
+    "APH5.0-S7"
+  ],
+  "APH5.0-S8": [
+    "APH5.0-S8"
+  ],
+  "APH5.0-S9": [
+    "APH5.0-S9"
+  ],
+  "APL16.0-S": [
+    "APL16.0-S"
+  ],
+  "ASW008K-SH": [
+    "ASW 008K-SH",
+    "ASW008K-SH"
+  ],
+  "ASW010K-SH": [
+    "ASW 010K-SH",
+    "ASW010K-SH"
+  ],
+  "ASW015K-TH": [
+    "ASW 015K-TH",
+    "ASW015K-TH"
+  ],
+  "ASW020K-TH": [
+    "ASW 020K-TH",
+    "ASW020K-TH"
+  ],
+  "ASW025K-TH": [
+    "ASW 025K-TH",
+    "ASW025K-TH"
+  ],
+  "ASW030K-TH": [
+    "ASW 030K-TH",
+    "ASW030K-TH",
+    "ASW30K-TH"
+  ],
+  "ASW05kH-T2": [
+    "ASW 05kH-T2",
+    "ASW05kH-T2"
+  ],
+  "ASW05kH-T2-DG": [
+    "ASW 05kH-T2-DG",
+    "ASW05kH-T2-DG"
+  ],
+  "ASW05kH-T2-O": [
+    "ASW 05kH-T2-O",
+    "ASW05kH-T2-O"
+  ],
+  "ASW06kH-T2": [
+    "ASW 06kH-T2",
+    "ASW06kH-T2"
+  ],
+  "ASW06kH-T2-DG": [
+    "ASW 06kH-T2-DG",
+    "ASW06kH-T2-DG"
+  ],
+  "ASW06kH-T2-O": [
+    "ASW 06kH-T2-O",
+    "ASW06kH-T2-O"
+  ],
+  "ASW08kH-T2": [
+    "ASW 08kH-T2",
+    "ASW08kH-T2"
+  ],
+  "ASW08kH-T2-DG": [
+    "ASW 08kH-T2-DG",
+    "ASW08kH-T2-DG"
+  ],
+  "ASW08kH-T2-O": [
+    "ASW 08kH-T2-O",
+    "ASW08kH-T2-O"
+  ],
+  "ASW08kH-T3": [
+    "ASW 08kH-T3",
+    "ASW08kH-T3"
+  ],
+  "ASW08kH-T3-DG": [
+    "ASW 08kH-T3-DG",
+    "ASW08kH-T3-DG"
+  ],
+  "ASW08kH-T3-O": [
+    "ASW 08kH-T3-O",
+    "ASW08kH-T3-O"
+  ],
+  "ASW1000-S-G2": [
+    "ASW 1000-S-G2",
+    "ASW1000-S-G2"
+  ],
+  "ASW10000-S": [
+    "ASW 10000-S",
+    "ASW10000-S"
+  ],
+  "ASW10000-S-A": [
+    "ASW 10000-S-A",
+    "ASW10000-S-A"
+  ],
+  "ASW1000S-S": [
+    "ASW 1000S-S",
+    "ASW1000S-S"
+  ],
+  "ASW100K-LT": [
+    "ASW 100K-LT",
+    "ASW100K-LT"
+  ],
+  "ASW10K-LT-G2": [
+    "ASW 10K-LT-G2",
+    "ASW10K-LT-G2"
+  ],
+  "ASW10K-LT-G2-Pro": [
+    "ASW 10K-LT-G2-Pro",
+    "ASW10K-LT-G2 Pro",
+    "ASW10K-LT-G2-Pro"
+  ],
+  "ASW10kH-T2": [
+    "ASW 10kH-T2",
+    "ASW010kH-T2",
+    "ASW10kH-T2"
+  ],
+  "ASW10kH-T2-DG": [
+    "ASW 10kH-T2-DG",
+    "ASW10kH-T2-DG"
+  ],
+  "ASW10kH-T2-O": [
+    "ASW 10kH-T2-O",
+    "ASW10kH-T2-O"
+  ],
+  "ASW10kH-T3": [
+    "ASW 10kH-T3",
+    "ASW10kH-T3"
+  ],
+  "ASW10kH-T3-DG": [
+    "ASW 10kH-T3-DG",
+    "ASW10kH-T3-DG"
+  ],
+  "ASW10kH-T3-O": [
+    "ASW 10kH-T3-O",
+    "ASW10kH-T3-O"
+  ],
+  "ASW110K-LT": [
+    "ASW 110K-LT",
+    "ASW110K-LT"
+  ],
+  "ASW125K-LT": [
+    "ASW 125K-LT",
+    "ASW125K-LT"
+  ],
+  "ASW12K-LT-G2": [
+    "ASW 12K-LT-G2",
+    "ASW12K-LT-G2"
+  ],
+  "ASW12K-LT-G2-Pro": [
+    "ASW 12K-LT-G2-Pro",
+    "ASW12K-LT-G2 Pro",
+    "ASW12K-LT-G2-Pro"
+  ],
+  "ASW12kH-T2": [
+    "ASW 12kH-T2",
+    "ASW12kH-T2"
+  ],
+  "ASW12kH-T2-DG": [
+    "ASW 12kH-T2-DG",
+    "ASW12kH-T2-DG"
+  ],
+  "ASW12kH-T2-O": [
+    "ASW 12kH-T2-O",
+    "ASW12kH-T2-O"
+  ],
+  "ASW12kH-T3": [
+    "ASW 12kH-T3",
+    "ASW12kH-T3"
+  ],
+  "ASW12kH-T3-DG": [
+    "ASW 12kH-T3-DG",
+    "ASW12kH-T3-DG"
+  ],
+  "ASW12kH-T3-O": [
+    "ASW 12kH-T3-O",
+    "ASW12kH-T3-O"
+  ],
+  "ASW13K-LT-G2": [
+    "ASW 13K-LT-G2",
+    "ASW13K-LT-G2"
+  ],
+  "ASW13K-LT-G2-Pro": [
+    "ASW 13K-LT-G2-Pro",
+    "ASW13K-LT-G2 Pro",
+    "ASW13K-LT-G2-Pro"
+  ],
+  "ASW1500-S-G2": [
+    "ASW 1500-S-G2",
+    "ASW1500-S-G2"
+  ],
+  "ASW1500S-S": [
+    "ASW 1500S-S",
+    "ASW1500S-S"
+  ],
+  "ASW150K-LT": [
+    "ASW 150K-LT",
+    "ASW150K-LT"
+  ],
+  "ASW15K-LT-G2": [
+    "ASW 15K-LT-G2",
+    "ASW15K-LT-G2"
+  ],
+  "ASW15K-LT-G2-Pro": [
+    "ASW 15K-LT-G2-Pro",
+    "ASW15K-LT-G2 Pro",
+    "ASW15K-LT-G2-Pro"
+  ],
+  "ASW15kH-T3-DG": [
+    "ASW 15kH-T3-DG",
+    "ASW15kH-T3-DG"
+  ],
+  "ASW17K-LT-G2": [
+    "ASW 17K-LT-G2",
+    "ASW17K-LT-G2"
+  ],
+  "ASW17K-LT-G2-Pro": [
+    "ASW 17K-LT-G2-Pro",
+    "ASW17K-LT-G2 Pro",
+    "ASW17K-LT-G2-Pro"
+  ],
+  "ASW2000-S-G2": [
+    "ASW 2000-S-G2",
+    "ASW2000-S-G2"
+  ],
+  "ASW2000S-S": [
+    "ASW 2000S-S",
+    "ASW2000S-S"
+  ],
+  "ASW20K-LT-G2": [
+    "ASW 20K-LT-G2",
+    "ASW20K-LT-G2"
+  ],
+  "ASW20K-LT-G2-Pro": [
+    "ASW 20K-LT-G2-Pro",
+    "ASW20K-LT-G2 Pro",
+    "ASW20K-LT-G2-Pro"
+  ],
+  "ASW2500-S-G2": [
+    "ASW 2500-S-G2",
+    "ASW2500-S-G2"
+  ],
+  "ASW250K-HT": [
+    "ASW 250K-HT",
+    "ASW250K-HT"
+  ],
+  "ASW25K-LT-G3": [
+    "ASW 25K-LT-G3",
+    "ASW25K-LT-G3"
+  ],
+  "ASW27K-LT-G3": [
+    "ASW 27K-LT-G3",
+    "ASW27K-LT-G3"
+  ],
+  "ASW29.9K-TH": [
+    "ASW 29.9K-TH",
+    "ASW29.9K-TH"
+  ],
+  "ASW3000-S": [
+    "ASW 3000-S",
+    "ASW3000-S"
+  ],
+  "ASW3000-S-G2": [
+    "ASW 3000-S-G2",
+    "ASW3000-S-G2"
+  ],
+  "ASW3000H-S2": [
+    "ASW 3000H-S2",
+    "ASW3000H-S2"
+  ],
+  "ASW3000K-MT": [
+    "ASW 3000K-MT",
+    "ASW3000K-MT"
+  ],
+  "ASW3000S-S": [
+    "ASW 3000S-S",
+    "ASW3000S-S"
+  ],
+  "ASW30K-LT-G3": [
+    "ASW 30K-LT-G3",
+    "ASW30K-LT-G3"
+  ],
+  "ASW333K-HT": [
+    "ASW 333K-HT",
+    "ASW333K-HT"
+  ],
+  "ASW33K-LT-G3": [
+    "ASW 33K-LT-G3",
+    "ASW33K-LT-G3"
+  ],
+  "ASW350K-HT": [
+    "ASW 350K-HT",
+    "ASW350K-HT"
+  ],
+  "ASW360K-HT": [
+    "ASW 360K-HT",
+    "ASW360K-HT"
+  ],
+  "ASW3680-S": [
+    "ASW 3680-S",
+    "ASW3680-S"
+  ],
+  "ASW3680-S-G2": [
+    "ASW 3680-S-G2",
+    "ASW3680-S-G2"
+  ],
+  "ASW3680H-S2": [
+    "ASW 3680H-S2",
+    "ASW3680H-S2"
+  ],
+  "ASW36K-LT-G3": [
+    "ASW 36K-LT-G3",
+    "ASW36K-LT-G3"
+  ],
+  "ASW3K-LT-G2-Pro": [
+    "ASW 3K-LT-G2-Pro",
+    "ASW3K-LT-G2 Pro",
+    "ASW3K-LT-G2-Pro"
+  ],
+  "ASW4000-S": [
+    "ASW 4000-S",
+    "ASW4000-S"
+  ],
+  "ASW4000-S-G2": [
+    "ASW 4000-S-G2",
+    "ASW4000-S-G2"
+  ],
+  "ASW4000H-S2": [
+    "ASW 4000H-S2",
+    "ASW4000H-S2"
+  ],
+  "ASW40K-LT-G3": [
+    "ASW 40K-LT-G3",
+    "ASW40K-LT-G3"
+  ],
+  "ASW45K-LT-G3": [
+    "ASW 45K-LT-G3",
+    "ASW45K-LT-G3"
+  ],
+  "ASW4K-LT-G2-Pro": [
+    "ASW 4K-LT-G2-Pro",
+    "ASW4K-LT-G2 Pro",
+    "ASW4K-LT-G2-Pro"
+  ],
+  "ASW5000-S": [
+    "ASW 5000-S",
+    "ASW5000-S"
+  ],
+  "ASW5000-S-A": [
+    "ASW 5000-S-A",
+    "ASW5000-S-A"
+  ],
+  "ASW5000-S-G2": [
+    "ASW 5000-S-G2",
+    "ASW5000-S-G2"
+  ],
+  "ASW5000H-S2": [
+    "ASW 5000H-S2",
+    "ASW5000H-S2"
+  ],
+  "ASW50K-LT-G3": [
+    "ASW 50K-LT-G3",
+    "ASW50K-LT-G3"
+  ],
+  "ASW510K-HT": [
+    "ASW 510K-HT",
+    "ASW510K-HT"
+  ],
+  "ASW5120-LB-E": [
+    "ASW 5120-LB-E",
+    "ASW5120-LB-E"
+  ],
+  "ASW5120-LB-G3": [
+    "ASW 5120-LB-G3",
+    "ASW5120-LB-G3"
+  ],
+  "ASW5K-LT-G2-Pro": [
+    "ASW 5K-LT-G2-Pro",
+    "ASW5K-LT-G2 Pro",
+    "ASW5K-LT-G2-Pro"
+  ],
+  "ASW6000-S": [
+    "ASW 6000-S",
+    "ASW6000-S"
+  ],
+  "ASW6000-S-A": [
+    "ASW 6000-S-A",
+    "ASW6000-S-A"
+  ],
+  "ASW6000-S-G2": [
+    "ASW 6000-S-G2",
+    "ASW6000-S-G2"
+  ],
+  "ASW6000H-S2": [
+    "ASW 6000H-S2",
+    "ASW6000H-S2"
+  ],
+  "ASW6000K-MT": [
+    "ASW 6000K-MT",
+    "ASW6000K-MT"
+  ],
+  "ASW60K-LT-G3": [
+    "ASW 60K-LT-G3",
+    "ASW60K-LT-G3"
+  ],
+  "ASW6K-LT-G2-Pro": [
+    "ASW 6K-LT-G2-Pro",
+    "ASW6K-LT-G2 Pro",
+    "ASW6K-LT-G2-Pro"
+  ],
+  "ASW75K-LT": [
+    "ASW 75K-LT",
+    "ASW75K-LT"
+  ],
+  "ASW8000-S": [
+    "ASW 8000-S",
+    "ASW8000-S"
+  ],
+  "ASW8000-S-A": [
+    "ASW 8000-S-A",
+    "ASW8000-S-A"
+  ],
+  "ASW80K-LT": [
+    "ASW 80K-LT",
+    "ASW80K-LT"
+  ],
+  "ASW8K-LT-G2": [
+    "ASW 8K-LT-G2",
+    "ASW8K-LT-G2"
+  ],
+  "ASW8K-LT-G2-Pro": [
+    "ASW 8K-LT-G2-Pro",
+    "ASW8K-LT-G2 Pro",
+    "ASW8K-LT-G2-Pro"
+  ],
+  "ASW9000K-MT": [
+    "ASW 9000K-MT",
+    "ASW9000K-MT"
+  ],
+  "Ai-HB 050A": [
+    "Ai-HB 050A"
+  ],
+  "Ai-HB 075A": [
+    "Ai-HB 075A"
+  ],
+  "Ai-HB 100A": [
+    "Ai-HB 100A"
+  ],
+  "Ai-HB 125A": [
+    "Ai-HB 125A"
+  ],
+  "Ai-HB 150A": [
+    "Ai-HB 150A"
+  ],
+  "Ai-HB 175A": [
+    "Ai-HB 175A"
+  ],
+  "Ai-HB 200A": [
+    "Ai-HB 200A"
+  ],
+  "Ai-HB Pro 075A": [
+    "Ai-HB Pro 075 A",
+    "Ai-HB Pro 075A"
+  ],
+  "Ai-HB Pro 100A": [
+    "Ai-HB Pro 100 A",
+    "Ai-HB Pro 100A"
+  ],
+  "Ai-HB Pro 125A": [
+    "Ai-HB Pro 125 A",
+    "Ai-HB Pro 125A"
+  ],
+  "Ai-HB Pro 150A": [
+    "Ai-HB Pro 150 A",
+    "Ai-HB Pro 150A"
+  ],
+  "Ai-HB Pro 175A": [
+    "Ai-HB Pro 175 A",
+    "Ai-HB Pro 175A"
+  ],
+  "Ai-HB Pro 200A": [
+    "Ai-HB Pro 200 A",
+    "Ai-HB Pro 200A"
+  ],
+  "Ai-HB-E 050A": [
+    "Ai-HB-E 050A"
+  ],
+  "Ai-HB-E 100A": [
+    "Ai-HB-E 100A"
+  ],
+  "Ai-HB-E 150A": [
+    "Ai-HB-E 150A"
+  ],
+  "Ai-HB-E 200A": [
+    "Ai-HB-E 200A"
+  ],
+  "ASW5120M-HB-E": [
+    "ASW5120M-HB-E",
+    "ASW5120M-HB-E-IP20"
+  ],
+  "ASW5120S-HB-E": [
+    "ASW5120S-HB-E",
+    "ASW5120S-HB-E-IP20"
+  ]
+}

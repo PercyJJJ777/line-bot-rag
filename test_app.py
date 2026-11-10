@@ -30,7 +30,7 @@ class WebhookTests(unittest.TestCase):
             response=self.client.get(path)
             self.assertEqual(response.status_code,200)
             self.assertEqual(response.json['dimension'],3072)
-            self.assertEqual(response.json['namespace'],'rag-f6b937b52e635197a0a2')
+            self.assertEqual(response.json['namespace'],'rag-dt-7369758250fbe0306986')
 
     def test_unsigned_request_is_rejected(self):
         self.assertEqual(self.post(self.event(),False).status_code,400)

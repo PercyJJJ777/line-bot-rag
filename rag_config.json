@@ -1,11 +1,15 @@
 {
   "index_name": "sinotech-gemini-3072",
-  "namespace": "rag-f6b937b52e635197a0a2",
+  "namespace": "rag-dt-7369758250fbe0306986",
   "embedding_model": "gemini-embedding-2",
   "dimension": 3072,
   "vector_field": "embedding",
   "document_template": "title: {title} | text: {text}",
   "query_template": "task: search result | query: {question}",
   "api": "pinecone-documents",
-  "record_count": 151
+  "record_count": 427,
+  "catalog_id": "priority-36f197f718f5e56bc873",
+  "application_schema": "rag-v2",
+  "scope": "active_sales_datasheets_and_training",
+  "price_snapshot_namespace": "rag-f6b937b52e635197a0a2"
 }

@@ -14,7 +14,7 @@ from rag_core import RagEngine, build_catalog
 
 CONFIG = json.loads(Path(__file__).with_name("rag_config.json").read_text(encoding="utf-8"))
 REQUIRED_KEYS = ("LINE_CHANNEL_ACCESS_TOKEN", "LINE_CHANNEL_SECRET", "GROQ_API_KEY", "PINECONE_API_KEY", "GEMINI_API_KEY")
-VERSION = "rag-3072-v1"
+VERSION = "rag-3072-v2"
 logger = logging.getLogger(__name__)
 
 
@@ -38,13 +38,15 @@ def production_engine():
     groq_client = Groq(api_key=required_key("GROQ_API_KEY"), timeout=15, max_retries=0)
     metadata, token = [], None
     while True:
-        page = index.documents.fetch(namespace=CONFIG["namespace"], filter={"models": {"$exists": True}},
+        page = index.documents.fetch(namespace=CONFIG["namespace"], filter={"doc_type": {"$eq": "price"}},
             include_fields=["models"], pagination_token=token)
         metadata.extend({"models": doc.get("models", [])} for doc in page.documents.values())
         token = page.pagination.next if page.pagination else None
         if not token:
             break
-    catalog = build_catalog(metadata)
+    alias_file=Path(__file__).with_name('model_aliases.json')
+    aliases=json.loads(alias_file.read_text(encoding='utf-8')) if alias_file.is_file() else {}
+    catalog = build_catalog(metadata,aliases)
     if not catalog:
         raise RuntimeError("Configured Pinecone namespace has no product metadata")
 
@@ -60,11 +62,13 @@ def production_engine():
         return vector
 
     def search(vector, filters):
-        response = index.documents.search(namespace=CONFIG["namespace"], top_k=8,
+        fields=('text','source','page','models','doc_type','extraction','contains_visuals',
+            'applicability','models_verified','requires_model_confirmation','mentioned_models','topics',
+            'document_status','version_status','source_authority','requires_visual_review','scope_note','fault_codes')
+        response = index.documents.search(namespace=CONFIG["namespace"], top_k=12,
             score_by=[DenseVectorQuery(field=CONFIG["vector_field"], values=vector)], filter=filters,
-            include_fields=["text", "source", "page", "models", "doc_type", "extraction", "contains_visuals"])
-        return [{"score": doc.score, **{field: doc.get(field) for field in
-            ("text", "source", "page", "models", "doc_type", "extraction", "contains_visuals")}} for doc in response.matches]
+            include_fields=list(fields))
+        return [{"score": doc.score, **{field: doc.get(field) for field in fields}} for doc in response.matches]
 
     def complete(system, context, question):
         response = groq_client.chat.completions.create(model="openai/gpt-oss-120b", temperature=0,
