@@ -45,6 +45,14 @@ class RetrievalTests(unittest.TestCase):
     def test_explicit_um_selects_user_manual_only(self):
         self.assertEqual(document_types("UM ASW5000-S-G2")[0], ["user_manual"])
 
+    def test_installation_question_can_use_matching_user_manual(self):
+        self.search.return_value = [{**self.doc, "doc_type":"user_manual", "source":"UM0023.pdf", "page":14,
+            "text":"Mount the ASW5000-S-G2 inverter with the wall bracket and observe the minimum mounting clearances."}]
+        answer = self.engine.answer("ติดตั้ง ASW5000-S-G2 อย่างไร")
+        self.assertIn("UM0023.pdf หน้า PDF 14",answer)
+        self.assertIn("user_manual",self.search.call_args.args[1]['$and'][1]['doc_type']['$in'])
+        self.complete.assert_called_once()
+
     def test_error_code_is_not_mistaken_for_product_model(self):
         self.assertEqual(identify_models("ASW5000-S error E-33", self.catalog), (["ASW5000-S"], False))
 

@@ -72,7 +72,7 @@ def document_types(question):
     if user_manual:
         types.add("user_manual")
     elif install:
-        types.add("installation_manual")
+        types.update(("installation_manual", "user_manual"))
     elif manual:
         types.update(("user_manual", "installation_manual"))
     if explicit_training(question) and not(price or datasheet or user_manual):
