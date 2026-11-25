@@ -1,15 +1,15 @@
 {
   "index_name": "sinotech-gemini-3072",
-  "namespace": "rag-um-77ac50a688afa1cffa49",
+  "namespace": "rag-ev-and-ad09e99a07a7f5d831e9",
   "embedding_model": "gemini-embedding-2",
   "dimension": 3072,
   "vector_field": "embedding",
   "document_template": "title: {title} | text: {text}",
   "query_template": "task: search result | query: {question}",
   "api": "pinecone-documents",
-  "record_count": 1324,
-  "catalog_id": "combined-um-sg2-fcc2286634c674f1ed33",
+  "record_count": 1498,
+  "catalog_id": "combined-ev-andsolar-20261125",
   "application_schema": "rag-v2",
-  "scope": "active_sales_datasheets_training_and_um",
-  "price_snapshot_namespace": "rag-um-31de75f35474c9f843cf"
+  "scope": "active_sales_datasheets_training_um_ev_andsolar",
+  "price_snapshot_namespace": "rag-um-77ac50a688afa1cffa49"
 }

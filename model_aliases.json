@@ -522,5 +522,106 @@
   "ASW5120S-HB-E": [
     "ASW5120S-HB-E",
     "ASW5120S-HB-E-IP20"
+  ],
+  "SOL7.4H": [
+    "SOL7.4H",
+    "SOL APOLLO 7.4",
+    "SOL-APOLLO 7.4",
+    "EV Charger 7.4 kW",
+    "EV Charger 7.4kW"
+  ],
+  "SOL11H": [
+    "SOL11H",
+    "SOL APOLLO 11",
+    "SOL-APOLLO 11",
+    "EV Charger 11 kW",
+    "EV Charger 11kW"
+  ],
+  "SOL22H": [
+    "SOL22H",
+    "SOL APOLLO 22",
+    "SOL-APOLLO 22",
+    "EV Charger 22 kW",
+    "EV Charger 22kW"
+  ],
+  "SOL7.4H-WP": [
+    "SOL7.4H WP",
+    "SOL7.4H-WP"
+  ],
+  "SOL7.4H-WS": [
+    "SOL7.4H WS",
+    "SOL7.4H-WS"
+  ],
+  "SOL7.4H-WSS": [
+    "SOL7.4H WSS",
+    "SOL7.4H-WSS"
+  ],
+  "SOL11H-WP": [
+    "SOL11H WP",
+    "SOL11H-WP"
+  ],
+  "SOL11H-WS": [
+    "SOL11H WS",
+    "SOL11H-WS"
+  ],
+  "SOL11H-WSS": [
+    "SOL11H WSS",
+    "SOL11H-WSS"
+  ],
+  "SOL22H-WP": [
+    "SOL22H WP",
+    "SOL22H-WP"
+  ],
+  "SOL22H-WS": [
+    "SOL22H WS",
+    "SOL22H-WS"
+  ],
+  "SOL22H-WSS": [
+    "SOL22H WSS",
+    "SOL22H-WSS"
+  ],
+  "AMCP500-600T1": [
+    "AMCP500 600T1",
+    "AMCP500-600T1",
+    "AMCP500-600 T1",
+    "AMCP T1"
+  ],
+  "AMCP600-750T1": [
+    "AMCP600 750T1",
+    "AMCP600-750T1",
+    "AMCP600-750 T1",
+    "AMCP T1"
+  ],
+  "AMCP1000-1200": [
+    "AMCP1000 1200",
+    "AMCP1000-1200",
+    "AMCP1000-1200T2",
+    "AMCP1000-1200 T2",
+    "AMCP T2"
+  ],
+  "AMCP1200-1500": [
+    "AMCP1200 1500",
+    "AMCP1200-1500",
+    "AMCP1200-1500T2",
+    "AMCP1200-1500 T2",
+    "AMCP T2"
+  ],
+  "AMCL-D2": [
+    "AMCL D2",
+    "AMCL-D2"
+  ],
+  "AMCL-E2": [
+    "AMCL E2",
+    "AMCL-E2"
+  ],
+  "AMCL-F2": [
+    "AMCL F2",
+    "AMCL-F2"
+  ],
+  "ADCU-M0": [
+    "ADCU M0",
+    "ADCU-M0",
+    "ADCU M0",
+    "ADCU"
   ]
 }
